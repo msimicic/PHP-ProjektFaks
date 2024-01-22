@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f3f3f3 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #fac639;
+  font-weight: 700;
+}
+
+.hero-image {
+  background-image: url("./images/Hero-image.jpg");
+  height: 200px;
+  background-position-x: center;
+  background-position-y: 35%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand > div,
+.nav-item > a {
+  color: #515151;
+}
+
+.home-container {
+  margin: 20px;
+  display: flex;
+  font-size: 1.1rem;
+}
+
+.home-container > img {
+  width: 350px;
+  height: 400px;
+}
+
+.home-container > div {
+  padding-right: 20px;
+}
+
+.footer-container {
+  background-color: #fac639;
+  text-align: center;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-container > p {
+  padding: 5px;
+  margin: 0;
+  bottom: 0;
+}
+.registration-form,
+.login-form {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px #888888;
+}
+
+.login-form {
+  margin: 134px auto;
+}
+
+.greece-figure {
+  width: 60%;
+  height: 20%;
+  border: 1px solid #a09f9fdd;
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.greece-figure:hover {
+  width: 62%;
+  z-index: 1;
+}
+
+.greece-figure > img {
+  border-radius: 15px;
+}
+
+.about-section iframe {
+  float: left;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 340px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 30px !important;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card .date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 6px 16px;
+  font-weight: 700;
+}
+
+.card .img {
+  height: 300px;
+}
+
+.card .sold-bar {
+  width: 120%;
+  background-color: #efb000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-19deg);
+  padding: 0.5rem;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+.card .body {
+  background-color: #fff;
+  border-radius: 30px 30px 30px 0;
+  padding: 35px 45px 35px 45px;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.card .body .price {
+  color: #efb000;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 2px #2c2000;
+}
+
+.price-container {
+  bottom: 0;
+}
+
+.card .body .btn {
+  background-color: #efb000;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  color: black;
+  position: relative;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 45px;
+  overflow: hidden;
+}
+
+.card .body .btn:after {
+  background-image: url("https://nomadik.travel/wp-content/themes/nomadik/img/arrow-pin-btn.svg");
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-left: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.user-container {
+  text-align: center;
+}
+
+.table-container {
+  max-width: 350px !important;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registracijska-poruka {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .greece-figure {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .edit-container {
+    width: 400px !important;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  iframe {
+    width: 100%;
+  }
+  .edit-container {
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card .body .btn {
+    padding-left: 35px;
+  }
+  .card .body .btn:after {
+    margin-left: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  iframe {
+    width: 100%;
+  }
+  .edit-container {
+    width: 350px !important;
+  }
+  .user-container {
+    width: 300px !important;
+    text-align: center;
+  }
+  .table-container {
+    width: 280px !important;
+  }
+}
